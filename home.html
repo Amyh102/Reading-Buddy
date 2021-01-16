@@ -10,10 +10,10 @@
 <body>
     <table class="bookshelves">
         <tr>
-            <th>Books to Read</th>
-            <th>Joeykins</th>
-            <th>Amy is beaut</th>
-            <th>Comrade Bookshelf</th>
+            <th>Books to Read <span class="tally" id="toRead">0</span></th>
+            <th>Joeykins <span class="tally" id="joe">0</span></th>
+            <th>Amy is beaut <span class="tally" id="amy">0</span></th>
+            <th>Comrade Bookshelf <span class="tally" id="comrade">0</span></th>
         </tr>
         <tr>
             <td><div class="grid-container"></div></td>
@@ -22,6 +22,18 @@
             <td><div class="grid-container"></div></td>
         </tr>
     </table>
+
+    <button onclick="newBook()">joe is a meanie</button>
+
+    <div class="add-book">
+        <h1>NEW BOOOOK</h1>
+        <!-- <input type="text" placeholder="goodreads url"> -->
+        <input type="text" id="popup-name" placeholder="name">
+        <input type="text" id="popup-author" placeholder="author">
+        <input type="text" id="popup-image" placeholder="image url">
+        <input type="submit" onclick="scrape()">
+    </div>
+
 </body>
 <script src="app.js"></script>
 </html>

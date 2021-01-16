@@ -1,20 +1,38 @@
 .bookshelves, td, th {
     border: 3px solid black;
+    margin: auto;
 }
 
 .grid-container {
   display: grid;
-  height: 380px;
-  grid-template-columns: auto auto auto auto auto;
+  height: 840px;
+  grid-template-columns: auto auto auto;
   background-color: burlywood;
 }
 
 .grid-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    height: 180px;
+    width: 108px;
     margin-top: 20px;
     font-size: 10px;
     text-align: center;
 
     background-color: white; 
   }
+
+.book-cover {
+  height: 180px;
+  width: 108px;
+}
+
+.tally {
+  float: right;
+  margin-right: 15px;
+}
+
+.add-book {
+  height: 200px;
+  width: 300px;
+  border: 2px solid black;
+}
